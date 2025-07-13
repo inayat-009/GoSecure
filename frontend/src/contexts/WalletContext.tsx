@@ -9,7 +9,7 @@ declare global {
 }
 
 // Contract configuration
-const CONTRACT_ADDRESS = "place your address"; // Your deployed contract address
+const CONTRACT_ADDRESS = import.meta.env.VITE_CONTRACT_ADDRESS || "place your address"; // Your deployed contract address
 const AVALANCHE_CHAIN_ID = "0xa869"; // Avalanche Fuji Testnet (43113 in hex)
 const AVALANCHE_RPC_URL = "https://api.avax-test.network/ext/bc/C/rpc";
 
